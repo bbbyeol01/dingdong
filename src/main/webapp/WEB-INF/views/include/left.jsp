@@ -25,16 +25,16 @@
 </head>
 	<div class="leftform">
 		<div class="leftlist">
-			<div class="bugreportform">
-				<a href = "/" style="text-decoration-line: none;">
-					<div class="bugreport">
-						<div class="loudspeakerform">
-							<img src="resources/bootstrap/image/확성기.png" class="loudspeaker">
-						</div>
-						<span class="bugreportcontent">버그와 제안은 여기에 댓글로 남겨주세요</span>
-					</div>
-				</a>
-			</div>
+<%--			<div class="bugreportform">--%>
+<%--				<a href = "/" style="text-decoration-line: none;">--%>
+<%--					<div class="bugreport">--%>
+<%--						<div class="loudspeakerform">--%>
+<%--							<img src="resources/bootstrap/image/확성기.png" class="loudspeaker">--%>
+<%--						</div>--%>
+<%--						<span class="bugreportcontent">버그와 제안은 여기에 댓글로 남겨주세요</span>--%>
+<%--					</div>--%>
+<%--				</a>--%>
+<%--			</div>--%>
 			<div class="topscrapers">
 				<div class="topscraperstitle">Top Scrapers</div>
 

@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import kr.co.dingdong.domain.Member;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -221,9 +222,10 @@ public class AdminCommunityController {
 	
 	@PostMapping("admin/notice/insert")
 	public String noticeInsert(HttpSession session, CommunityBoard notice, Model model) {
-		Admin admin = (Admin)session.getAttribute("admin");
+//		Admin admin = (Admin)session.getAttribute("admin");
+
+		Member admin = (Member)session.getAttribute("member");
 		
-		log.info("[admin] " + admin);
 		notice.setId(admin.getId());
 		notice.setNickname(admin.getNickname());
 		

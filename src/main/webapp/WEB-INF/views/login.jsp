@@ -44,13 +44,13 @@
 					<div class="snslogin">
 						<span style="font-weight: 500; font-size: 14px;">SNS 로그인</span>
 						<div class="sns">
-							<div class="githublogin" OnClick="location.href ='/#'">
+							<div class="githublogin" OnClick="alert('준비중입니다.')">
 								<img src="${contextPath }/resources/bootstrap/image/github.svg" class="github">
 							</div>
-							<div class="googlelogin" OnClick="location.href ='/#'">
+							<div class="googlelogin" OnClick="alert('준비중입니다.')">
 								<img src="${contextPath }/resources/bootstrap/image/google.svg" class="google">
 							</div>
-							<div class="facebooklogin" OnClick="location.href ='/#'">
+							<div class="facebooklogin" OnClick="alert('준비중입니다.')">
 								<img src="${contextPath }/resources/bootstrap/image/facebook.svg" class="facebook">
 							</div>
 							<div class="naverlogin" OnClick="location.href ='https://nid.naver.com/oauth2.0/authorize?client_id=6f2bLBR28K9LHe94s9_i&state=STATE_STRING&redirect_uri=http://localhost:8080/dingdong/oauth/naver&response_type=code'">

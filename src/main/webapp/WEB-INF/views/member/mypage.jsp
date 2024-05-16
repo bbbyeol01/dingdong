@@ -158,13 +158,16 @@ $("#editBtn").click(function() {
    
    console.log(inputFile);
    console.log(file);
-   
-   if(!checkExtension(file.name, file.size)){
-      return false;
+
+
+   if(inputFile.length !== 0){
+       if(!checkExtension(file.name, file.size)){
+          return false;
+       }
+       formData.append("uploadFile", file);
    }
-   
-   formData.append("uploadFile", file);
-   
+
+
    $.ajax({
    
       url : url,

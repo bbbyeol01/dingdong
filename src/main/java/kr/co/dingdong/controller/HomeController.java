@@ -69,7 +69,7 @@ public class HomeController {
 		List<CommunityVO> listAllBynotice = communityService.listAllBynotice();
 		for(CommunityVO communityVO : listAllBynotice) {
 			if(communityVO.getProfile() == null) {
-				communityVO.setProfile("admin_default_profile.jpg");
+				communityVO.setProfile("admin_default_profile.png");
 			}
 		}
 		Time.calculateTimeDifference(listAllBynotice);

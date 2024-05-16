@@ -129,53 +129,53 @@
 					</div>
 				</div>
 				<div class="listboardpageform">
-					<div class="listboardform">
-						<ul style="padding: 0px 0px; display: flex; flex-direction: column;">
-							<li class="announcelistboard">
-								<div style="width: 100%;display: flex; justify-content: flex-start;">
-									<div class="useractivity">
-									<a class="profilepic"  href="#"><img class="profilepic" src=""></a>
-									<a class="nickname"  href="/member/mypage">닉네임</a>
-									<div class="activity">
-										<span style="margin-right: 0.125rem; font-size: 14px; float: left;">·</span>
-										<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="like" viewBox="0 0 16 16" style=" float: left;">
-  											<path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
-										</svg>
-										<span style="height: 20px; float: left;">
-											<span style="font-size: 14px; float: left;">0</span>
-											<span style="margin: 0px 0px 0px 4px; font-size: 14px; float: left;">·</span>
-											<span style="font-size: 14px; margin: 0px 0px 0px 4px; float: left;">0분 전</span>
-										</span>
-									</div>
-								</div>
-								</div>
-								<div style="width: 100%;margin: 8px 0px;">
-									<a class="announcementtitle" href="/">공지 제목</a>
-								</div>
-								<div class="boardhitsform">
-									<div class="hitsform">
-										<img src="resources/bootstrap/image/조회수.svg" style="width: 20px; height: 20px;">
-										<span style="color: #374151; font-size: 15px; font-weight: 500; margin: 0px 0px 0px 3px;">0</span>
-									</div>
-									<div class="commentsform2">
-										<img src="resources/bootstrap/image/댓글.svg" style="width: 18px; height: 18px; margin: 1px;">
-										<span style="color: #374151; font-size: 15px; font-weight: 500; margin: 0px 0px 0px 4px;">0</span>
-									</div>
-									<div class="thumbsupform2">
-										<img src="resources/bootstrap/image/좋아요.svg" style="width: 19px; height: 19px;">
-										<span style="color: #374151; font-size: 15px; font-weight: 500; margin: 0px 0px 0px 3px;">0</span>
-									</div>
-								</div>
-							</li>
+<%--					<div class="listboardform">--%>
+<%--						<ul style="padding: 0px 0px; display: flex; flex-direction: column;">--%>
+<%--							<li class="announcelistboard">--%>
+<%--								<div style="width: 100%;display: flex; justify-content: flex-start;">--%>
+<%--									<div class="useractivity">--%>
+<%--									<a class="profilepic"  href="#"><img class="profilepic" src=""></a>--%>
+<%--									<a class="nickname"  href="/member/mypage">닉네임</a>--%>
+<%--									<div class="activity">--%>
+<%--										<span style="margin-right: 0.125rem; font-size: 14px; float: left;">·</span>--%>
+<%--										<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="like" viewBox="0 0 16 16" style=" float: left;">--%>
+<%--  											<path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>--%>
+<%--										</svg>--%>
+<%--										<span style="height: 20px; float: left;">--%>
+<%--											<span style="font-size: 14px; float: left;">0</span>--%>
+<%--											<span style="margin: 0px 0px 0px 4px; font-size: 14px; float: left;">·</span>--%>
+<%--											<span style="font-size: 14px; margin: 0px 0px 0px 4px; float: left;">0분 전</span>--%>
+<%--										</span>--%>
+<%--									</div>--%>
+<%--								</div>--%>
+<%--								</div>--%>
+<%--								<div style="width: 100%;margin: 8px 0px;">--%>
+<%--									<a class="announcementtitle" href="/">공지 제목</a>--%>
+<%--								</div>--%>
+<%--								<div class="boardhitsform">--%>
+<%--									<div class="hitsform">--%>
+<%--										<img src="resources/bootstrap/image/조회수.svg" style="width: 20px; height: 20px;">--%>
+<%--										<span style="color: #374151; font-size: 15px; font-weight: 500; margin: 0px 0px 0px 3px;">0</span>--%>
+<%--									</div>--%>
+<%--									<div class="commentsform2">--%>
+<%--										<img src="resources/bootstrap/image/댓글.svg" style="width: 18px; height: 18px; margin: 1px;">--%>
+<%--										<span style="color: #374151; font-size: 15px; font-weight: 500; margin: 0px 0px 0px 4px;">0</span>--%>
+<%--									</div>--%>
+<%--									<div class="thumbsupform2">--%>
+<%--										<img src="resources/bootstrap/image/좋아요.svg" style="width: 19px; height: 19px;">--%>
+<%--										<span style="color: #374151; font-size: 15px; font-weight: 500; margin: 0px 0px 0px 3px;">0</span>--%>
+<%--									</div>--%>
+<%--								</div>--%>
+<%--							</li>--%>
 
 
 
-						
-							
-							
-						</ul>
-					</div>
-	
+<%--						--%>
+<%--							--%>
+<%--							--%>
+<%--						</ul>--%>
+<%--					</div>--%>
+<%--	--%>
 					<c:forEach items="${boardList}" var="list">
 							<li class="listboard">
 								<div style="width: 100%;display: flex; justify-content: flex-start;">
@@ -199,7 +199,7 @@
 									<a class="listboardtitle" href="${contextPath}/community/read?boardNum=${list.boardNum}">${list.title}</a>
 								</div>
 								<div style="margin-bottom: 1rem; width: 100%;">
-									<a class="listboardcontent" href="/" style="font-size: 13px;">${list.content}</a>
+									<a class="listboardcontent" style="font-size: 13px; white-space: nowrap; overflow:hidden;">${list.content}</a>
 								</div>
 								<div class="boardhitsform">
 									<div class="hitsform">

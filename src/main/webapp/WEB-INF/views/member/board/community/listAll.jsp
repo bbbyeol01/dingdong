@@ -47,7 +47,7 @@
 							<th>카테고리</th>
 							<th>제목</th>
 							<th>작성자</th>
-							<th>아이디</th>
+<%--							<th>아이디</th>--%>
 							
 							<th>회원 전용</th>
 							<th>작성 날짜</th>
@@ -55,10 +55,10 @@
 							<th>좋아요</th>
 							<th>싫어요</th>
 							
-							<th>신고</th>
+<%--							<th>신고</th>--%>
 							<th>스크랩</th>
 							
-							<th>삭제</th>
+<%--							<th>삭제</th>--%>
 							
 							
 						</tr>
@@ -69,7 +69,7 @@
 							<th>카테고리</th>
 							<th>제목</th>
 							<th>작성자</th>
-							<th>아이디</th>
+<%--							<th>아이디</th>--%>
 							
 							<th>회원 전용</th>
 							<th>작성 날짜</th>
@@ -77,10 +77,10 @@
 							<th>좋아요</th>
 							<th>싫어요</th>
 							
-							<th>신고</th>
+<%--							<th>신고</th>--%>
 							<th>스크랩</th>
 							
-							<th>삭제</th>
+<%--							<th>삭제</th>--%>
 						</tr>
 					</tfoot>
 					
@@ -92,7 +92,7 @@
 								<td>${communityBoard.category }</td>
 								<td><p style="text-overflow: ellipsis; width: 100px; white-space: nowrap; /* 줄바꿈 방지 */ overflow: hidden; /* 넘치는 부분 감춤 */" ><a href="${contextPath }/community/read?boardNum=${communityBoard.boardNum}">${communityBoard.title }</a></p></td>
 								<td>${communityBoard.nickname }</td>
-								<td>${communityBoard.id }</td>
+<%--								<td>${communityBoard.id }</td>--%>
 								
 								<td>${communityBoard.membership }</td>
 								<td>${communityBoard.regDate }</td>
@@ -100,16 +100,16 @@
 								<td>${communityBoard.good }</td>
 								<td>${communityBoard.bad }</td>
 								
-								<td>${communityBoard.report }</td>
+<%--								<td>${communityBoard.report }</td>--%>
 								<td>${communityBoard.jjim }</td>
-								<c:choose>
-									<c:when test="${communityBoard.del eq 1 }">
-										<td style="background-color: lightpink;">${communityBoard.del }</td>
-									</c:when>
-									<c:otherwise>
-										<td>${communityBoard.del }</td>
-									</c:otherwise>
-								</c:choose>
+<%--								<c:choose>--%>
+<%--									<c:when test="${communityBoard.del eq 1 }">--%>
+<%--										<td style="background-color: lightpink;">${communityBoard.del }</td>--%>
+<%--									</c:when>--%>
+<%--									<c:otherwise>--%>
+<%--										<td>${communityBoard.del }</td>--%>
+<%--									</c:otherwise>--%>
+<%--								</c:choose>--%>
 							</tr>
 						</c:forEach>
 					</tbody>

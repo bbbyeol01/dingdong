@@ -69,24 +69,24 @@
 								<a id="community-del" class="nav-link" href="${contextPath}/admin/board/del">삭제</a>
 							</nav>
 						</div>
-						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-							data-bs-target="#pagesCollapseError" aria-expanded="false"
-							aria-controls="pagesCollapseError"> 
-							거래
-							<div class="sb-sidenav-collapse-arrow">
-								<i class="fas fa-angle-down"></i>
-							</div>
-						</a>
-						<div class="collapse" id="pagesCollapseError"
-							aria-labelledby="headingOne"
-							data-bs-parent="#sidenavAccordionPages">
-							<nav class="sb-sidenav-menu-nested nav">
-								<a class="nav-link" href="#">전체</a> 
-								<a class="nav-link" href="#">블라인드</a>
-								<a class="nav-link" href="#">거래 완료</a>
-								<a class="nav-link" href="#">삭제</a>
-							</nav>
-						</div>
+<%--						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"--%>
+<%--							data-bs-target="#pagesCollapseError" aria-expanded="false"--%>
+<%--							aria-controls="pagesCollapseError"> --%>
+<%--							거래--%>
+<%--							<div class="sb-sidenav-collapse-arrow">--%>
+<%--								<i class="fas fa-angle-down"></i>--%>
+<%--							</div>--%>
+<%--						</a>--%>
+<%--						<div class="collapse" id="pagesCollapseError"--%>
+<%--							aria-labelledby="headingOne"--%>
+<%--							data-bs-parent="#sidenavAccordionPages">--%>
+<%--							<nav class="sb-sidenav-menu-nested nav">--%>
+<%--								<a class="nav-link" href="#">전체</a> --%>
+<%--								<a class="nav-link" href="#">블라인드</a>--%>
+<%--								<a class="nav-link" href="#">거래 완료</a>--%>
+<%--								<a class="nav-link" href="#">삭제</a>--%>
+<%--							</nav>--%>
+<%--						</div>--%>
 					</nav>
 				</div>
 				
@@ -123,24 +123,24 @@
 				
 				
 				
-					<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-					data-bs-target="#collapseLayouts-3" aria-expanded="false"
-					aria-controls="collapseLayouts-3">
-					<div class="sb-nav-link-icon">
-						<i class="fas fa-columns"></i>
-					</div> 
-					신고
-					<div class="sb-sidenav-collapse-arrow">
-						<i class="fas fa-angle-down"></i>
-					</div>
-				</a>
-				<div class="collapse" id="collapseLayouts-3"
-					aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-					<nav class="sb-sidenav-menu-nested nav">
-						<a class="nav-link" href="#">글 신고</a>
-						<a class="nav-link" href="#">댓글 신고</a>
-					</nav>
-				</div>
+<%--					<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"--%>
+<%--					data-bs-target="#collapseLayouts-3" aria-expanded="false"--%>
+<%--					aria-controls="collapseLayouts-3">--%>
+<%--					<div class="sb-nav-link-icon">--%>
+<%--						<i class="fas fa-columns"></i>--%>
+<%--					</div> --%>
+<%--					신고--%>
+<%--					<div class="sb-sidenav-collapse-arrow">--%>
+<%--						<i class="fas fa-angle-down"></i>--%>
+<%--					</div>--%>
+<%--				</a>--%>
+<%--				<div class="collapse" id="collapseLayouts-3"--%>
+<%--					aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">--%>
+<%--					<nav class="sb-sidenav-menu-nested nav">--%>
+<%--						<a class="nav-link" href="#">글 신고</a>--%>
+<%--						<a class="nav-link" href="#">댓글 신고</a>--%>
+<%--					</nav>--%>
+<%--				</div>--%>
 				
 				
 				

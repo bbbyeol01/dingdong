@@ -29,7 +29,7 @@
 				<!-- 새별: 순서는 branchList - listAll - detail - form(결제 ajax) - success(결제 성공 시)입니다. -->
 				
 				<br>	
-				<h1>여기에 정보 구현</h1><br>
+				<h1></h1><br>
 				${room.name}<br>
 				날짜 <input type="hidden" id="reservationDate" name="date" value="${reservation.date}"/>${reservation.date}<br>
 				시작 ${reservation.start}<br>

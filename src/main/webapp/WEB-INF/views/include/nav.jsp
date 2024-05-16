@@ -179,8 +179,8 @@
         			<a class="logo" href="${contextPath }/"><img style="width: 28px; height: 28px;" src="${contextPath }/resources/bootstrap/image/dingdong.png"><span style="color: #3DCFF4; font-size: 17px; font-weight: 600; margin-left: 4px;">DingDong</span></a>
         			<ul class="list" style="padding: 0;">
         				<li class="detaillist"><a class="name" href="${contextPath }/community">커뮤니티</a></li>
-        				<li class="detaillist"><a class="name" href="${contextPath }/reservation/branchList">예약</a></li>
-        				<li class="detaillist"><a class="name" href="${contextPath }/reservation2/branchList">예약2</a></li>
+<%--        				<li class="detaillist"><a class="name" href="${contextPath }/reservation/branchList">예약</a></li>--%>
+        				<li class="detaillist"><a class="name" href="${contextPath }/reservation2/branchList">스터디룸</a></li>
         				<li class="detaillist"><a class="name" href="${contextPath }/admin">관리자</a></li>
         			</ul>
         		</div>
@@ -245,7 +245,7 @@
 												<button class="listbannerfont2" id="list1" style="margin-top: 12px;" onclick="location.href='${contextPath}/member/mypage'">프로필</button>
 												<button class="listbannerfont2" id="list2">활동내역</button>
 												<button class="listbannerfont2" id="list4" onclick="location.href='${contextPath}/member/alarm/list'">알림</button>
-												<button class="listbannerfont2" id="list5" onclick="location.href='${contextPath}/member/note/list'">쪽지</button>
+<%--												<button class="listbannerfont2" id="list5" onclick="location.href='${contextPath}/member/note/list'">쪽지</button>--%>
 												<button class="listbannerfont2" id="list3" onclick="location.href='${contextPath}/logout'">로그아웃</button>
 														
 												<!-- 쪽지 모달 버튼 -->
@@ -254,16 +254,16 @@
 										</div>
 									</div>
 									<div class="forbtnbottomfixed2">
-										<div class="chatform" style="display: flex; align-items: center; margin-left: 12px; cursor: pointer;">
-											<img class="message" src="${contextPath }/resources/bootstrap/image/message.png">
-											<div class="redbtn"></div>
-										</div>
-										<div class="notewindowform" id="banner">
-											<div class="notewindow">
-												<button class="listbannerfont3" id="firstlist" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" id="quit-modal">쪽지 보내기</button>
-												<button class="listbannerfont3" id="secondlist">받은 쪽지</button>
-											</div>
-										</div>
+<%--										<div class="chatform" style="display: flex; align-items: center; margin-left: 12px; cursor: pointer;">--%>
+<%--											<img class="message" src="${contextPath }/resources/bootstrap/image/message.png">--%>
+<%--											<div class="redbtn"></div>--%>
+<%--										</div>--%>
+<%--										<div class="notewindowform" id="banner">--%>
+<%--											<div class="notewindow">--%>
+<%--												<button class="listbannerfont3" id="firstlist" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" id="quit-modal">쪽지 보내기</button>--%>
+<%--												<button class="listbannerfont3" id="secondlist">받은 쪽지</button>--%>
+<%--											</div>--%>
+<%--										</div>--%>
 									</div>
 								</div>
 							</div>
@@ -292,31 +292,31 @@
 
 <!--  얘가 쪽지 작성 버튼 -->
 <!--  <button class="btn listbannerfont2" style="text-align:center; background-color: blue; color: white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" id="quit-modal">작성</button> -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">쪽지 작성</h5>
-		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		      </div>
-		      <div class="modal-body">
-			      <div class="mb-3">
-		            <label for="message-text" class="col-form-label">받는 사람</label>
-		            <input type="text" style="width: 95%;" id="receiver" name="receiver" class="form-control" id="message-text"></input>
-		          </div>
-		          <div class="mb-3">
-		            <label for="message-text" class="col-form-label">내용</label>
-		            <textarea style="width: 95%; height : 150px" id="noteContent" name="content" class="form-control" id="message-text"></textarea>
-		          </div>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary" id="noteBtn">보내기</button>
-		      </div>
-		    </div>
-	  </div>
-	</div>
-<!--  쪽지 모달 끝 -->
+<%--	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">--%>
+<%--				<div class="modal-dialog">--%>
+<%--		    <div class="modal-content">--%>
+<%--		      <div class="modal-header">--%>
+<%--		        <h5 class="modal-title" id="exampleModalLabel">쪽지 작성</h5>--%>
+<%--		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>--%>
+<%--		      </div>--%>
+<%--		      <div class="modal-body">--%>
+<%--			      <div class="mb-3">--%>
+<%--		            <label for="message-text" class="col-form-label">받는 사람</label>--%>
+<%--		            <input type="text" style="width: 95%;" id="receiver" name="receiver" class="form-control" id="message-text"></input>--%>
+<%--		          </div>--%>
+<%--		          <div class="mb-3">--%>
+<%--		            <label for="message-text" class="col-form-label">내용</label>--%>
+<%--		            <textarea style="width: 95%; height : 150px" id="noteContent" name="content" class="form-control" id="message-text"></textarea>--%>
+<%--		          </div>--%>
+<%--		      </div>--%>
+<%--		      <div class="modal-footer">--%>
+<%--		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>--%>
+<%--		        <button type="button" class="btn btn-primary" id="noteBtn">보내기</button>--%>
+<%--		      </div>--%>
+<%--		    </div>--%>
+<%--	  </div>--%>
+<%--	</div>--%>
+<%--<!--  쪽지 모달 끝 -->--%>
 
 
 
@@ -420,7 +420,7 @@
 						// 여기에 통신 실패 로직 구현
 					}
 				})
-			} // if(${member ne null}){
+			} // if(${member ne null})
 			
 				
 				

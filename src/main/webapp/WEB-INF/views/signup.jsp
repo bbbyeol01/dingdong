@@ -26,13 +26,13 @@
 					<div class="snssignup">
 						<span style="font-weight: 500; font-size: 14px;">SNS 회원가입</span>
 						<div class="sns">
-							<div class="githubsignup" OnClick="location.href ='/'">
+							<div class="githubsignup" OnClick="alert('준비중입니다.')">
 								<img src="${contextPath }/resources/bootstrap/image/github.svg" class="github">
 							</div>
-							<div class="googlesignup" OnClick="location.href ='/'">
+							<div class="googlesignup" OnClick="alert('준비중입니다.')">
 								<img src="${contextPath }/resources/bootstrap/image/google.svg" class="google">
 							</div>
-							<div class="facebooksignup" OnClick="location.href ='/'">
+							<div class="facebooksignup" OnClick="alert('준비중입니다.')">
 								<img src="${contextPath }/resources/bootstrap/image/facebook.svg" class="facebook">
 							</div>
 							<div class="naversignup" OnClick="naverLogin()">

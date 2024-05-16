@@ -18,6 +18,15 @@
 	border-radius: 0.375rem;
 }
 
+.notloginCommentbtn {
+	padding: 10px 32px;
+	font-size: 14px;
+	color: #fff;
+	background-color: gray;
+	font-weight: 600;
+	border-radius: 0.375rem;
+}
+
 .commentbtn:hover {
 	background-color: #0B7FD3;
 }
@@ -40,20 +49,52 @@
 </style>
 </head>
 <body>
-	
-   <div style="width: 792px; border: 1px solid rgb(209 213 219); margin: 20px 0; padding: 24px; border-radius: 0.5rem;">
-   		<div style="display: flex; column-gap: 1rem;">
-   			<img src="${contextPath }/resources/images/profile/${member.profile}" style="width: 40px; height: 40px; border-radius: 9999px;">
-   			<textarea id="replyContent" rows="4" cols="50" placeholder="여러분의 생각을 댓글로 자유롭게 표현해주세요." style="padding: 16px 10px; border: 1px solid rgb(209 213 219); border-radius: 0.375rem; font-size: 14px; color: #111827; outline: none; width: 100%; resize: none;"></textarea>
-   		</div>
-   		<div style="display: flex; justify-content: flex-end; margin: 12px 0 0;">
- 	  		<button class="commentbtn" onclick="addReply()">등록</button>
- 	  	</div>
-   </div>
+
+
+	<c:choose>
+		<c:when  test="${member ne null}">
+			<div style="width: 792px; border: 1px solid rgb(209 213 219); margin: 20px 0; padding: 24px; border-radius: 0.5rem;">
+				<div style="display: flex; column-gap: 1rem;">
+					<img src="${contextPath }/resources/images/profile/${member.profile}" style="width: 40px; height: 40px; border-radius: 9999px;">
+					<textarea id="replyContent" rows="4" cols="50" placeholder="여러분의 생각을 댓글로 자유롭게 표현해주세요." style="padding: 16px 10px; border: 1px solid rgb(209 213 219); border-radius: 0.375rem; font-size: 14px; color: #111827; outline: none; width: 100%; resize: none;"></textarea>
+				</div>
+				<div style="display: flex; justify-content: flex-end; margin: 12px 0 0;">
+					<button class="commentbtn" onclick="addReply()">등록</button>
+				</div>
+			</div>
+
+		</c:when>
+		<c:otherwise>
+			<div style="width: 792px; border: 1px solid rgb(209 213 219); margin: 20px 0; padding: 24px; border-radius: 0.5rem;">
+				<div style="display: flex; column-gap: 1rem;">
+					<img src="${contextPath }/resources/images/profile/default_profile.png" style="width: 40px; height: 40px; border-radius: 9999px;">
+					<textarea rows="4" cols="50" placeholder="로그인 후에 댓글을 작성할 수 있어요." style="padding: 16px 10px; border: 1px solid rgb(209 213 219); border-radius: 0.375rem; font-size: 14px; color: #111827; outline: none; width: 100%; resize: none;" disabled></textarea>
+				</div>
+				<div style="display: flex; justify-content: flex-end; margin: 12px 0 0;">
+					<button class="notloginCommentbtn">등록</button>
+				</div>
+			</div>
+		</c:otherwise>
+
+
+	</c:choose>
+
+
+
+
+
+
+	<br>
+	<br>
+	<br>
+	<br>
    <div id="replySection">
 		<!-- 댓글을 표시할 영역 -->
 	</div>
-	
+	<br>
+	<br>
+	<br>
+
 	
 
 	<script>

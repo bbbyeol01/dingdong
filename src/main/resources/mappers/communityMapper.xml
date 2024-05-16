@@ -24,7 +24,7 @@
         select board_num, title, content, c.nickname, c.id, c.reg_date, views, reply, good, bad, notice, edit, edit_date, c.del, c.del_date, c.report, c.jjim, shareurl, membership, category, blind, m.profile,m.idx as member_idx from community_board c
         join member m
         on c.id = m.id
-        where c.del=0 and c.notice = 0 and c.blind=0 and board_num=#{boardNum}
+        where c.del=0 and c.blind=0 and board_num=#{boardNum}
     </select>
 
 
@@ -139,8 +139,11 @@
 
     <select id="onePage" parameterType="hashMap" resultType="CommunityVO">
 
-        select * from community_board
-        where del=0 and notice=0 and blind=0 and
+        select board_num, title, content, c.nickname, c.id, c.reg_date, views, reply, good, bad, notice, edit, edit_date, c.del, c.del_date, c.report, c.jjim, shareurl, membership, category, blind, m.profile, m.idx as member_idx
+        from community_board c
+        join member m
+        on c.id = m.id
+        where c.del=0 and notice=0 and blind=0 and
 
 
         <if test='searchType.equals("title")'>
@@ -199,9 +202,9 @@
     </select>
 
     <select id="listAllBynotice" resultType="CommunityVO">
-        select board_num, title, content, c.nickname, c.id, c.reg_date, views, reply, good, bad, notice, edit, edit_date, c.del, c.del_date, c.report, jjim, shareurl, membership, category, blind, a.profile from community_board c
-        join admin a
-        on c.id = a.id
+        select board_num, title, content, c.nickname, c.id, c.reg_date, views, reply, good, bad, notice, edit, edit_date, c.del, c.del_date, c.report, jjim, shareurl, membership, category, blind, m.profile from community_board c
+        join member m
+        on c.id = m.id
         where c.del=0 and c.notice = 1 and c.blind=0
         order by reg_date desc
         limit 5
@@ -248,9 +251,9 @@
     </update>
     
       <select id="noticeRead" resultType="CommunityVO">
-        select board_num, title, content, a.nickname, c.id, c.reg_date, views, reply, good, bad, notice, edit, edit_date, c.del, c.del_date, c.report, jjim, shareurl, membership, category, blind, a.profile from community_board c
-        join admin a
-        on c.id = a.id
+        select board_num, title, content, m.nickname, c.id, c.reg_date, views, reply, good, bad, notice, edit, edit_date, c.del, c.del_date, c.report, jjim, shareurl, membership, category, blind, m.profile from community_board c
+        join Member m
+        on c.id = m.id
         where board_num=#{boardNum}
     </select>
     

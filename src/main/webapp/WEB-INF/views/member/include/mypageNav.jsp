@@ -46,15 +46,15 @@
   <li class="nav-item">
     <a class="nav-link link-btn" href="${contextPath }/member/board/community"><span>작성 게시글</span></a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link link-btn" href="#"><span>작성 댓글</span></a>
-  </li>
+<%--  <li class="nav-item">--%>
+<%--    <a class="nav-link link-btn" href="#"><span>작성 댓글</span></a>--%>
+<%--  </li>--%>
     <li class="nav-item">
     <a class="nav-link link-btn" href="${contextPath }/member/reservation"><span>예약 내역</span></a>
   </li>
-   <li class="nav-item">
-    <a class="nav-link link-btn" href="#"><span>스크랩</span></a>
-  </li>
+<%--   <li class="nav-item">--%>
+<%--    <a class="nav-link link-btn" href="#"><span>스크랩</span></a>--%>
+<%--  </li>--%>
     <li class="nav-item">
     <a class="nav-link link-btn" href="${contextPath }/member/quit"><span>회원 탈퇴</span></a>
   </li>
