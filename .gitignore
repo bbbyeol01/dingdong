@@ -24,4 +24,9 @@ hs_err_pid*
 replay_pid*
 
 #custom
-*/target/*
+**/target/**
+.settings/**
+.idea/**
+.springBeans
+.project
+.classpath

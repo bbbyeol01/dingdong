@@ -27,7 +27,7 @@ public class NaverApi {
 	private String naverSecretKey = "PgCj0x3FX4";
 	
 //	redirect URL
-	private String naverRedirectUri = "http://localhost:8080/dingdong/oauth/naver";
+	private String naverRedirectUri = "http://localhost:8080/oauth/naver";
 	
 	
 //	accessToken 얻어오는 메서드

@@ -104,7 +104,7 @@ $(document).ready(function(){
 		}
 		
 		
-		var url = "/dingdong/admin/notice/uploadAction";
+		var url = "/admin/notice/uploadAction";
 		
 		$.ajax({
 			url : url,

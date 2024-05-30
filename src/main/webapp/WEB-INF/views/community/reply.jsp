@@ -108,7 +108,7 @@
         	var boardNum = ${communityVO.boardNum};
         	
             $.ajax({
-                url : "/dingdong/community/reply",
+                url : "/community/reply",
                 type : "GET",
                 data : {
                 	'boardNum' : boardNum
@@ -204,7 +204,7 @@
                 'id' : id
             };
             $.ajax({
-				url : "/dingdong/community/reply",
+				url : "/community/reply",
 				type : "POST",
 				dataType : "json",
 				data : replyData,
@@ -235,7 +235,7 @@
                 'id' : id
             };
             $.ajax({
-				url : "/dingdong/community/reply",
+				url : "/community/reply",
 				type : "POST",
 				dataType : "json",
 				data : replyData,
@@ -267,7 +267,7 @@
                 'id' : id
             };
             $.ajax({
-				url : "/dingdong/community/reply",
+				url : "/community/reply",
 				type : "POST",
 				dataType : "json",
 				data : replyData,

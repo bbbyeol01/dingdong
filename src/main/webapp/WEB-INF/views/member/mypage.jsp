@@ -150,7 +150,7 @@ $("#editBtn").click(function() {
    console.log("수정버튼 클릭");
    
    // 이미지 업로드 ajax
-   var url = "/dingdong/member/profileUpdateAction";
+   var url = "/member/profileUpdateAction";
    var formData = new FormData();
    
    var inputFile = $("input[name='uploadFile']")[0].files;

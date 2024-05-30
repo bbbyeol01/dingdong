@@ -131,7 +131,7 @@ function kakaoPay(email, name) {
 
           	// reservation DB에 정보를 넣습니당
             $.ajax({
-                url : "/dingdong/reservation2/insert",
+                url : "/reservation2/insert",
                 data : {
                     'reservationNumber' : merchant_uid,
                     'studyroomNumber' : '${room.studyroom}',
@@ -156,7 +156,7 @@ function kakaoPay(email, name) {
                 	// 성공 시 로직을 구현할 수 있습니다.
                 	if(data === 0){
 	                    alert('결제 완료!')
-    	                location.href='/dingdong/reservation2/success?number=' + merchant_uid;
+    	                location.href='/reservation2/success?number=' + merchant_uid;
                 	}
                 },
                 error : function (data) {

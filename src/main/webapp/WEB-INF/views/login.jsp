@@ -53,10 +53,10 @@
 							<div class="facebooklogin" OnClick="alert('준비중입니다.')">
 								<img src="${contextPath }/resources/bootstrap/image/facebook.svg" class="facebook">
 							</div>
-							<div class="naverlogin" OnClick="location.href ='https://nid.naver.com/oauth2.0/authorize?client_id=6f2bLBR28K9LHe94s9_i&state=STATE_STRING&redirect_uri=http://localhost:8080/dingdong/oauth/naver&response_type=code'">
+							<div class="naverlogin" OnClick="location.href ='https://nid.naver.com/oauth2.0/authorize?client_id=6f2bLBR28K9LHe94s9_i&state=STATE_STRING&redirect_uri=http://localhost:8080/oauth/naver&response_type=code'">
 								<img src="${contextPath }/resources/bootstrap/image/naver.svg" class="naver">
 							</div>
-							<div class="kakaologin" onclick="location.href ='https://kauth.kakao.com/oauth/authorize?client_id=02dbaa97c87035feee18dd2668dd61a6&redirect_uri=http://localhost:8080/dingdong/oauth/kakao&response_type=code'">
+							<div class="kakaologin" onclick="location.href ='https://kauth.kakao.com/oauth/authorize?client_id=02dbaa97c87035feee18dd2668dd61a6&redirect_uri=http://localhost:8080/oauth/kakao&response_type=code'">
 								<img src="${contextPath }/resources/bootstrap/image/kakao.png" class="kakao">
 							</div>
 						</div>

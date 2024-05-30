@@ -83,7 +83,7 @@
 	function getNote(idx){
 		
 		var htmls = "";
-		var url = "/dingdong/member/note/read";
+		var url = "/member/note/read";
 		var paramData = {
 		 		'idx' : idx
 		}
@@ -121,7 +121,7 @@
 	
 	function allNote(){
 		var htmls = "";
-		url = "/dingdong/member/note/getList";
+		url = "/member/note/getList";
 		
 		$.ajax({
 			url : url,

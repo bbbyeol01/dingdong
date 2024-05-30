@@ -204,7 +204,7 @@ function cancelKakaoPay(){
 			var reservationNumber = $("#reservationNumber").val();
 			var cost = $("#cost").val();
 			
-			var url = "/dingdong/member/reservation/cancel";
+			var url = "/member/reservation/cancel";
 			
 			// 필수값
 			// merchant_uid 결제 고유 번호
@@ -233,7 +233,7 @@ function cancelKakaoPay(){
 					alert('취소 완료!');
 					console.log(result.code);
 					console.log("merchant_uid " + result.merchant_uid);
-					location.href="/dingdong/member/reservation/cancelSuccess?reservationNumber=" + reservationNumber;
+					location.href="/member/reservation/cancelSuccess?reservationNumber=" + reservationNumber;
 					// 여기에 통신 성공 로직 구현
 					// result가 해당 url에서 보내는 return값
 				},

@@ -146,7 +146,7 @@
 function cancelKakaoPay(reservationNumber, cost){
 		
 		if(confirm('취소하시겠습니까?')){
-			var url = "/dingdong/member/reservation/cancel";
+			var url = "/member/reservation/cancel";
 			
 			// 필수값
 			// merchant_uid 결제 고유 번호

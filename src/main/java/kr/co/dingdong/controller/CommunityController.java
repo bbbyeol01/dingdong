@@ -71,7 +71,7 @@ public class CommunityController {
             FileUtils.copyInputStreamToFile(fileStream, targetFile);
 
 //			realPathd와 대칭되는 실제 resources 폴더
-            String imagePath = "/dingdong/resources/images/community/";
+            String imagePath = "/resources/images/community/";
             jsonObject.addProperty("url", imagePath + saveFileName);
             jsonObject.addProperty("responseCode", "success");
 

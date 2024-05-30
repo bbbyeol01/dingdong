@@ -31,6 +31,8 @@ import kr.co.dingdong.service.ReservationService2;
 
 @Controller
 public class MemberController {
+
+	private final String uploadPath = "/Users/imsaebyeol/Documents/upload";
 	
 	private static final Logger log = LoggerFactory.getLogger(MemberController.class);
 	
@@ -93,7 +95,7 @@ public class MemberController {
 		if(!(prevPassword.equals(prevMemberInfo.getPassword()))) {
 			w.println("<script>");
 			w.println("alert('비밀번호가 올바르지 않습니다.')");
-			w.println("location.href='/dingdong/member/mypage'");
+			w.println("location.href='/member/mypage'");
 			w.println("</script>");
 			
 			return;
@@ -117,7 +119,7 @@ public class MemberController {
 		}else {
 			w.println("alert('수정 실패하였습니다.')");
 		}
-		w.println("location.href='/dingdong/member/mypage'");
+		w.println("location.href='/member/mypage'");
 		w.println("</script>");
 		
 	}
@@ -128,42 +130,48 @@ public class MemberController {
 	
 //	프로필 업데이트
 	@PostMapping("member/profileUpdateAction")
-	public void profileUpdate(MultipartFile uploadFile, HttpSession session) {
+	public void profileUpdate(MultipartFile multipartFile, HttpSession session) {
 		
 		log.info("[this is profileUpdateAction!]");
 		
 //		절대 경로
 //		workspace-sts-3.9.18.RELEASE/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/dingdong/resources
-		String uploadFolder = session.getServletContext().getRealPath("resources");
-		uploadFolder += "/images/profile";
+//		String uploadFolder = session.getServletContext().getRealPath("resources");
+//		uploadFolder += "/images/profile";
 		
-		File uploadPath = new File(uploadFolder);
+		File file = new File(uploadPath);
 		
 		log.info("[uploadPath] "+ uploadPath);
-		log.info("[uploadFile] " + uploadFile);
-		
-		
-		String uploadFileName = uploadFile.getOriginalFilename();
-		String extension = uploadFileName.substring(uploadFileName.lastIndexOf("."));
+		log.info("[uploadFile] " + multipartFile);
+
+
+		String originalName = multipartFile.getOriginalFilename();
+
+		int index = originalName.lastIndexOf(".");
+		String extension = originalName.substring(index);
+		originalName = originalName.substring(0, index);
 
 //		uploadFileName = uploadFileName.substring(uploadFileName.lastIndexOf("\\") + 1);
 //		랜덤 파일명 
-		uploadFileName = UUID.randomUUID() + "";
-		
-		File saveFile = new File(uploadPath, uploadFileName);
-		
+
+		UUID uuid = UUID.randomUUID();
+
+		File saveFile = new File(uploadPath, uuid + extension);
+
 		try {
 			
 //			InputStream fileStream = multipartFile.getInputStream();
 //			FileUtils.copyInputStreamToFile(fileStream, targetFile);
 //			파일 업로드
-			uploadFile.transferTo(saveFile);
+			multipartFile.transferTo(saveFile);
 		} catch (IllegalStateException | IOException e) {
 			log.info(e.getMessage());
 		}
 		
 		String id = ((Member)session.getAttribute("member")).getId();
-		Member member = new Member(id, uploadFileName);
+		Member member = new Member(id, originalName + extension);
+//		memberService.findByIdx((Member)session.getAttribute("member").());
+
 		
 //		멤버 수정
 		int result = memberService.updateProfile(member);
@@ -203,7 +211,7 @@ public class MemberController {
 			if(result > 0) {
 				w.println("<script>");
 				w.println("alert('탈퇴가 완료되었습니다.')");
-				w.println("location.href='/dingdong/'");
+				w.println("location.href='/'");
 				w.println("</script>");
 				
 				return;
@@ -213,7 +221,7 @@ public class MemberController {
 		if(!member.getPassword().equals(password)) {
 			w.println("<script>");
 			w.println("alert('비밀번호가 올바르지 않습니다.')");
-			w.println("location.href='/dingdong/member/quit'");
+			w.println("location.href='/member/quit'");
 			w.println("</script>");
 			
 			return;
@@ -232,7 +240,7 @@ public class MemberController {
 		if(result > 0) {
 			w.println("<script>");
 			w.println("alert('탈퇴가 완료되었습니다.')");
-			w.println("location.href='/dingdong/'");
+			w.println("location.href='/'");
 			w.println("</script>");
 			
 			return;

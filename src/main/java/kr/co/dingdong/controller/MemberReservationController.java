@@ -88,7 +88,7 @@ public class MemberReservationController {
 		if(!(password.equals(member.getPassword()))) {
 			w.println("<script>");
 			w.println("alert('비밀번호가 올바르지 않습니다.')");
-			w.println("location.href='/dingdong/member/reservation/detail?reservationNumber=" + reservation.getReservationNumber() + "'");
+			w.println("location.href='/member/reservation/detail?reservationNumber=" + reservation.getReservationNumber() + "'");
 			w.println("</script>");
 			
 			return;
@@ -102,7 +102,7 @@ public class MemberReservationController {
 		}else {
 			w.println("alert('변경 실패하였습니다.')");
 		}
-		w.println("location.href='/dingdong/member/reservation/detail?reservationNumber=" + reservation.getReservationNumber() + "'");
+		w.println("location.href='/member/reservation/detail?reservationNumber=" + reservation.getReservationNumber() + "'");
 		w.println("</script>");
 		
 	}

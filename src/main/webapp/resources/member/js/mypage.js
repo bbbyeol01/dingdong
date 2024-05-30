@@ -31,7 +31,7 @@ $("#editBtn").click(function() {
 	}
 	
 	// 이미지 업로드 ajax
-	var url = "/dingdong/member/profileUpdateAction";
+	var url = "/member/profileUpdateAction";
 	var formData = new FormData();
 	var inputFile = $("input[name='new-profile-img']");
 	

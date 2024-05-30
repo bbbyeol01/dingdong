@@ -60,7 +60,7 @@ function findEmail(){
 	
 	console.log(email);
 	
- 	var url = "/dingdong/isExistEmail";
+ 	var url = "/isExistEmail";
  	var paramData = {
  			'email' : email
  	};
@@ -109,7 +109,7 @@ function mailSend(){
 		
 		data : { email : email },
 		dataType : 'JSON',
-		url : '/dingdong/findId/sendEmail',
+		url : '/findId/sendEmail',
 		type : 'POST',
 		success : function(data){
 			console.log('통신 성공!' + data);
@@ -118,7 +118,7 @@ function mailSend(){
 				history.back();
 			}else{
 			 	alert('메일이 전송되었습니다.');
-			 	location.href='/dingdong/login';
+			 	location.href='/login';
 			}
 		}
 		

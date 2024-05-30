@@ -14,7 +14,7 @@ function checkId(){
       
       data : { inputId : inputId },
       dataType : 'JSON',
-      url : '/dingdong/idDuplicateCheck',
+      url : '/idDuplicateCheck',
       type : 'POST',
       success : function(data){
           if(data === 1){	//	아이디가 중복되었다면

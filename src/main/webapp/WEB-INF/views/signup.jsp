@@ -17,7 +17,7 @@
 		<!-- container -->
 		<div class="signupform">
 			<div class="signup">
-				<div onclick="location.href ='/dingdong'" style="cursor:pointer; width: 100%; height: 48px;">
+				<div onclick="location.href ='/'" style="cursor:pointer; width: 100%; height: 48px;">
 					<img alt="" src="${contextPath }/resources/bootstrap/image/dingdong.png" style="width: 66.2px; height: 48px; margin: 0px 190px;">
 				</div>
 				<h2 class="logintitle">DingDong에 오신것을 환영합니다.</h2>
@@ -543,11 +543,11 @@
 		// 새별: kakao, naver 버튼 클릭 시 api 실행
 		// 그냥 버튼 href로 구현 되면 좋겠는데 계속 오류나서 그냥 여기로 뺐음(24/03/06)
 		function kakaoLogin(){
-			location.href = 'https://kauth.kakao.com/oauth/authorize?client_id=02dbaa97c87035feee18dd2668dd61a6&redirect_uri=http://localhost:8080/dingdong/oauth/kakao&response_type=code'
+			location.href = 'https://kauth.kakao.com/oauth/authorize?client_id=02dbaa97c87035feee18dd2668dd61a6&redirect_uri=http://localhost:8080/oauth/kakao&response_type=code'
 		}
 		
 		function naverLogin(){
-			location.href = 'https://nid.naver.com/oauth2.0/authorize?client_id=6f2bLBR28K9LHe94s9_i&state=STATE_STRING&redirect_uri=http://localhost:8080/dingdong/oauth/naver&response_type=code'
+			location.href = 'https://nid.naver.com/oauth2.0/authorize?client_id=6f2bLBR28K9LHe94s9_i&state=STATE_STRING&redirect_uri=http://localhost:8080/oauth/naver&response_type=code'
 		}
 		
 		

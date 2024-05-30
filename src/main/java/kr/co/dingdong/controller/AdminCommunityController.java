@@ -18,6 +18,7 @@ import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -37,7 +38,9 @@ import kr.co.dingdong.service.CommunityService;
 
 @Controller
 public class AdminCommunityController {
-	
+
+	private final String uploadPath = "/Users/imsaebyeol/Documents/upload";
+
 	private static final Logger log = LoggerFactory.getLogger(AdminCommunityController.class);
 	
 	@Autowired
@@ -82,7 +85,7 @@ public class AdminCommunityController {
 		if(result > 0) {
 			w.println("<script>");
 			w.println("alert('삭제 성공!')");
-			w.println("location.href='/dingdong/admin/board/listAll'");
+			w.println("location.href='/admin/board/listAll'");
 			w.println("</script>");
 		}
 		
@@ -114,9 +117,9 @@ public class AdminCommunityController {
 	@PostMapping("admin/notice/uploadAction")
 	public void uploadAction(MultipartFile[] uploadFile, Model model) throws IOException {
 		
-		String uploadFolder = "/Users/imsaebyeol/Documents/workspace-sts-3.9.18.RELEASE/dingdong/src/main/webapp/resources/images/community/notice";
+//		String uploadFolder = "/Users/imsaebyeol/Documents/workspace-sts-3.9.18.RELEASE/src/main/webapp/resources/images/community/notice";
 		
-		File uploadPath = new File(uploadFolder);
+		File file = new File(uploadPath);
 		
 //		날짜 폴더 경로 지정 
 //		File uploadPath = new File(uploadFolder, getFolder());
@@ -134,17 +137,18 @@ public class AdminCommunityController {
 			log.info("[Upload File Name] " + multipartFile.getOriginalFilename());
 			log.info("[Upload File Name] " + multipartFile.getSize());
 
-			String uploadFileName = multipartFile.getOriginalFilename();
+			String originalName = multipartFile.getOriginalFilename();
 
-			uploadFileName = uploadFileName.substring(uploadFileName.lastIndexOf("\\") + 1);
+			int index = originalName.lastIndexOf(".");
+			String extension = originalName.substring(index);
+			originalName = originalName.substring(0, index);
 
-			log.info("only file name: " + uploadFileName);
+
+			log.info("only file name: " + originalName);
 			
 			UUID uuid = UUID.randomUUID();
-			
-			uploadFileName = uuid.toString() + "_" + uploadFileName;
 
-			File saveFile = new File(uploadPath, uploadFileName);
+			File saveFile = new File(uploadPath, uuid + extension);
 
 			try {
 				multipartFile.transferTo(saveFile);
@@ -179,8 +183,8 @@ public class AdminCommunityController {
 //		String uploadPath = "/Users/imsaebyeol/Documents/workspace-sts-3.9.18.RELEASE/dingdong/src/main/webapp/resources/images/community/notice/";
 		
 //		.meta/
-		String uploadPath = request.getSession().getServletContext().getRealPath("resources"); 
-		String fileRoot = uploadPath + "/images/community/notice/";
+//		String uploadPath = request.getSession().getServletContext().getRealPath("resources");
+//		String fileRoot = uploadPath + "/images/community/notice/";
 		
 //		업로드 파일 원본 이름, 확장자 추출
 		String originalFileName = multipartFile.getOriginalFilename();
@@ -190,7 +194,7 @@ public class AdminCommunityController {
 //		String saveFileName = UUID.randomUUID() + "_" + originalFileName;
 		String saveFileName = UUID.randomUUID() + "";
 		
-		File targetFile = new File(fileRoot + saveFileName);
+		File targetFile = new File(uploadPath + saveFileName);
 		
 		
 		try {
@@ -204,8 +208,9 @@ public class AdminCommunityController {
 //			jsonObject.addProperty("url", uploadPath + saveFileName);
 			
 //			realPathd와 대칭되는 실제 resources 폴더
-			String imagePath = "/dingdong/resources/images/community/notice/";
-			jsonObject.addProperty("url", imagePath + saveFileName);
+//			String imagePath = "/resources/images/community/notice/";
+
+			jsonObject.addProperty("url", uploadPath + saveFileName);
 			jsonObject.addProperty("responseCode", "success");
 			
 			

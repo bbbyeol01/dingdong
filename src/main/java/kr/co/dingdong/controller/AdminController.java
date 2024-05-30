@@ -71,7 +71,7 @@ public class AdminController {
 		response.setContentType("text/html; charset=UTF-8");
 		w.println("<script>");
 		w.println("alert('로그아웃되었습니다.')");
-		w.println("location.href='/dingdong/'");
+		w.println("location.href='/'");
 		w.println("</script>");
 		
 	}

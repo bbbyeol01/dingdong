@@ -26,7 +26,7 @@ public class KakaoApi {
 	private String kakaoApiKey = "02dbaa97c87035feee18dd2668dd61a6";
 	
 //	redirect URL
-	private String kakaoRedirectUri = "http://localhost:8080/dingdong/oauth/kakao";
+	private String kakaoRedirectUri = "http://localhost:8080/oauth/kakao";
 	
 	
 //	accessToken 얻어오는 메서드

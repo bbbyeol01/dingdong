@@ -130,7 +130,7 @@ public class HomeController {
 		response.setContentType("text/html; charset=UTF-8");
 		w.println("<script>");
 		w.println("alert('로그아웃되었습니다.')");
-		w.println("location.href='/dingdong/'");
+		w.println("location.href='/'");
 		w.println("</script>");
 		
 	}
@@ -159,12 +159,12 @@ public class HomeController {
 			memberService.loginDateUpdate(member.getId());
  			session.setAttribute("member", member);
 			w.println("<script>");
-			w.println("location.href='/dingdong/'");
+			w.println("location.href='/'");
 			w.println("</script>");
 		}else {
 			w.println("<script>");
 			w.println("alert('아이디나 비밀번호가 올바르지 않습니다.')");
-			w.println("location.href='/dingdong/login'");
+			w.println("location.href='/login'");
 			w.println("</script>");
 		}
 		
@@ -218,16 +218,16 @@ public class HomeController {
 		if(result != 0) {
 			w.println("<script>");
 			w.println("if(confirm('가입되었습니다! 로그인하시겠습니까?')){");
-			w.println("location.href='/dingdong/login'");
+			w.println("location.href='/login'");
 			w.println("}");
 			w.println("else{");
-			w.println("location.href='/dingdong/'");
+			w.println("location.href='/'");
 			w.println("}");
 			w.println("</script>");
 		}else {
 			w.println("<script>");
 			w.println("alert('가입에 실패하였습니다.')");
-			w.println("location.href='/dingdong/login'");
+			w.println("location.href='/login'");
 			w.println("</script>");
 		}
 		

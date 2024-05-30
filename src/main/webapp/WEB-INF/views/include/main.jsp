@@ -25,7 +25,7 @@
 						<div class="content1">
 							<div class="contenttitle">
 								<div class="useractivity">
-									<a  href="${contextPath }/member/other?member=">
+									<a  href="${contextPath }/member/other?member=${communityVO.id}">
 										<img class="profilepic" src="${contextPath }/resources/images/profile/${communityVO.profile}">
 									</a>
 									<a class="nickname"  href="${contextPath }/member/other/">${communityVO.nickname }</a>

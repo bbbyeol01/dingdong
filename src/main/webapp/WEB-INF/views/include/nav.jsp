@@ -375,7 +375,7 @@
 				if (event.keyCode === 13) {
 					// 현재 검색어를 가져와서 구글 검색 페이지로 이동
 					var searchKeyword = $(this).val();
-					window.location.href = 'http://localhost:8080/dingdong/community?keyword=' + searchKeyword;
+					window.location.href = 'http://localhost:8080/community?keyword=' + searchKeyword;
 				}
 			});
 			
@@ -384,7 +384,7 @@
 			if(${member ne null}){
 				var htmls = "";
 				
-				var url = "/dingdong/member/alarm";
+				var url = "/member/alarm";
 				var id = "${member.id}";
 				
 				var paramData = {
@@ -429,7 +429,7 @@
 				var searchKeyword = $('.searchbox').val();
 				// 검색어가 비어있지 않은 경우에만 검색 페이지로 이동
 				if (searchKeyword.trim() !== "") {
-					window.location.href = 'http://localhost:8080/dingdong/community?keyword=' + searchKeyword;
+					window.location.href = 'http://localhost:8080/community?keyword=' + searchKeyword;
 				}
 			});
 			
@@ -476,7 +476,7 @@
 			var receiver = $("#receiver").val();
 			var noteContent = $("#noteContent").val();
 
-			var url = "/dingdong/member/note/send";
+			var url = "/member/note/send";
 			var paramData = {
 					"receiver" : receiver,
 					"content" : noteContent
@@ -512,7 +512,7 @@
 		// 새별: 알람 버튼을 누르면 알람 리스트로 이동합니다.
 		// 모달로 구현해도 괜찮을듯 
 		function showAlarm(){
-			location.href = '/dingdong/member/alarm/list';
+			location.href = '/member/alarm/list';
 		}
 		
 		
