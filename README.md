@@ -4,6 +4,17 @@
 
 <br>
 
+# 📌 미리보기
+<img src="https://github.com/bbbyeol01/dingdong/assets/145461705/0bcf462d-7088-4684-8557-5bb4b3920ed3">
+<img src="https://github.com/bbbyeol01/dingdong/assets/145461705/6434b02c-6eee-4323-8bdf-a3e7feb15acf">
+<img src="https://github.com/bbbyeol01/dingdong/assets/145461705/433c55b5-a248-443a-bcff-f428b67f14f6">
+<img src="https://github.com/bbbyeol01/dingdong/assets/145461705/9286b6a5-848d-45d1-9e3e-9f61164d7f63">
+<img src="https://github.com/bbbyeol01/dingdong/assets/145461705/9efc7663-ba5a-4239-a762-ed3e726e7a8f">
+<img src="https://github.com/bbbyeol01/dingdong/assets/145461705/e085ffc3-e1a2-4773-890c-1b6f5262c1a8">
+
+<br>
+<br>
+
 # 🗓 ️기간
 2024/1/23 ~ 2024/03/08(45일)
 
@@ -101,11 +112,3 @@ kauth.kakao
 <br>
 <br>
 <br>
-
-# 📌 미리보기
-<img src="https://github.com/bbbyeol01/dingdong/assets/145461705/0bcf462d-7088-4684-8557-5bb4b3920ed3">
-<img src="https://github.com/bbbyeol01/dingdong/assets/145461705/6434b02c-6eee-4323-8bdf-a3e7feb15acf">
-<img src="https://github.com/bbbyeol01/dingdong/assets/145461705/433c55b5-a248-443a-bcff-f428b67f14f6">
-<img src="https://github.com/bbbyeol01/dingdong/assets/145461705/9286b6a5-848d-45d1-9e3e-9f61164d7f63">
-<img src="https://github.com/bbbyeol01/dingdong/assets/145461705/9efc7663-ba5a-4239-a762-ed3e726e7a8f">
-<img src="https://github.com/bbbyeol01/dingdong/assets/145461705/e085ffc3-e1a2-4773-890c-1b6f5262c1a8">
