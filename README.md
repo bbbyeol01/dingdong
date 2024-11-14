@@ -1,8 +1,44 @@
 # Dingdong
 [개발자 커뮤니티]<br>
-개발이라는 하나의 주제 안에서, 타 커뮤니티보다 조금 더 가볍고 자유로운 이야기를 나눌 수 있는 사이트를 만들고자 했습니다. 
-
+개발이라는 하나의 주제 안에서, 타 커뮤니티보다 조금 더 가볍고 자유로운 이야기를 나눌 수 있는 사이트를 만들고자 했습니다. <br>
 게시글에서 만난 유저들의 인연이 편하게 이어지길 바라는 마음에서 스터디룸 예약 기능을 추가했습니다.
+
+<br>
+
+### ️기간
+2024/1/23 ~ 2024/03/08(45일)
+
+<br>
+
+###  기술 스택
+![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=Openjdk&logoColor=white)
+![JSP](https://img.shields.io/badge/JSP-007396?style=flat&logo=Openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=Javascript&logoColor=white)
+<br>
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=spring&logoColor=white)
+<br>
+![Mysql](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![MyBatis](https://img.shields.io/badge/MyBatis-000000?style=flat&logo=mybatis&logoColor=white)
+<br>
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
+![JQuery](https://img.shields.io/badge/JQuery-0769AD?style=flat&logo=jquery&logoColor=white)
+![Kakao](https://img.shields.io/badge/KakaoPay-FFCD00?style=flat&logo=kakao&logoColor=black)
+![Naver](https://img.shields.io/badge/Naver-03C75A?style=flat&logo=naver&logoColor=white)
+![JUnit](https://img.shields.io/badge/Junit-25A162?style=flat&logo=junit5&logoColor=white)
+<br>
+summernote<br>
+PortOne<br>
+nid.naver, kauth.kakao
+
+
+
+
+<br>
+
+### 팀
+조장: 임새별<br>
+조원: 전형근, 김지혜, 한승현, 황정우
+
 
 <br>
 <br>
@@ -49,6 +85,15 @@ QR을 인식하면 카카오로 결제할 수 있습니다.
 <br>
 
 <img src="https://github.com/bbbyeol01/dingdong/assets/145461705/9286b6a5-848d-45d1-9e3e-9f61164d7f63">
+
+### 마이페이지
+마이페이지에서 회원 정보를 수정하거나 게시글을 확인할 수 있습니다.
+
+<br>
+<br>
+<br>
+<br>
+
 <img src="https://github.com/bbbyeol01/dingdong/assets/145461705/9efc7663-ba5a-4239-a762-ed3e726e7a8f">
 <img src="https://github.com/bbbyeol01/dingdong/assets/145461705/e085ffc3-e1a2-4773-890c-1b6f5262c1a8">
 
@@ -68,18 +113,6 @@ QR을 인식하면 카카오로 결제할 수 있습니다.
 <br>
 <br>
 
-
-# 🗓 ️기간
-2024/1/23 ~ 2024/03/08(45일)
-
-<br>
-
-# 🧑‍🤝‍🧑 팀
-[정답을알려조]<br>
-조장: 임새별<br>
-조원: 전형근, 김지혜, 한승현, 황정우
-
-<br>
 
 # 📌 기능
 [참고] OKKY<br>
@@ -150,20 +183,8 @@ javax.mail 1.4.7
 javax.json 1.1.4
 
 <br>
-
-# 📌 라이브러리
-summernote
-
-bootstrap 5.0.2
-
-jquery
-
-import
-
-nid.naver
-
-kauth.kakao
-
+<br>
+<br>
 <br>
 
 # 📌 ERD
