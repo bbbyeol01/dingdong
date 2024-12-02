@@ -3,6 +3,13 @@
 개발이라는 하나의 주제 안에서, 타 커뮤니티보다 조금 더 가볍고 자유로운 이야기를 나눌 수 있는 사이트를 만들고자 했습니다. <br>
 게시글에서 만난 유저들의 인연이 편하게 이어지길 바라는 마음에서 스터디룸 예약 기능을 추가했습니다.
 
+<!-- 
+![dingdong-4](https://github.com/user-attachments/assets/b1514a39-19da-41ba-8e8c-8e78842497b1)
+![dingdong-3](https://github.com/user-attachments/assets/8f60c833-c117-4d34-8e46-1bd0a0d48157)
+![dingdong-2](https://github.com/user-attachments/assets/a56c45db-1016-4852-a634-c4132d871713)
+![dingdong-1](https://github.com/user-attachments/assets/456e1dab-cfe9-4dde-93c0-17fd405e5924)
+-->
+
 <br>
 
 ### ️기간
